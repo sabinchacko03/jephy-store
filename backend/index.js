@@ -17,9 +17,9 @@ const Role = db.role;
 
 db.sequelize.sync();
 
-app.get('/', (req, res) => {
-    res.json({message: "Welcome abroad"});
-});
+// app.get('/', (req, res) => {
+//     res.json({message: "Welcome abroad"});
+// });
 
 const PORT = process.env.PORT || 3001;
 
