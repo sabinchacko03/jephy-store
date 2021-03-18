@@ -23,14 +23,14 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 3001;
 
-// app.use(express.static(path.resolve(__dirname, '../site/build')));
+app.use(express.static(path.resolve(__dirname, '../site/build')));
 
 // const api = require('./routes/route');
 // app.use('/api', api);
 
-// app.get('*', (req, res) =>{
-//     res.sendFile(path.resolve(__dirname, '../site/build', 'index.html'));
-// })
+app.get('*', (req, res) =>{
+    res.sendFile(path.resolve(__dirname, '../site/build', 'index.html'));
+})
 
 app.listen(PORT, () =>{
     console.log('SERVER LISTENING');
