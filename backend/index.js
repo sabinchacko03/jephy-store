@@ -23,7 +23,7 @@ db.sequelize.sync();
 
 const PORT = process.env.PORT || 3001;
 
-app.use(express.static(path.resolve(__dirname, '../site/build')));
+// app.use(express.static(path.resolve(__dirname, '../site/build')));
 
 // const api = require('./routes/route');
 // app.use('/api', api);
